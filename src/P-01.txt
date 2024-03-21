@@ -1,0 +1,21 @@
+1.-gitignore: Este archivo se utiliza en proyectos que usan Git para el control 
+de versiones. 
+Cualquier archivo o directorio que se mencione en este archivo
+ será ignorado por Git, lo que significa que no se incluirá en ninguno de los
+ commits.
+  Esto es útil para archivos que no deseas compartir con otros, como 
+ archivos de configuración local o directorios de node_modules que contienen 
+ librerías descargadas.
+
+
+2.-package.json: Este archivo es esencial en cualquier proyecto de Node.js. 
+Contiene metadatos sobre tu proyecto, como el nombre, la versión y la descripción.
+ También lista las dependencias de tu proyecto, que son las librerías de las que tu
+  proyecto depende para funcionar. 
+Cuando ejecutas npm install o yarn,
+estas dependencias se descargan y se guardan en el directorio node_modules.
+
+3.- main.js : es un archivo JavaScript que se utiliza comúnmente como punto de entrada
+ en aplicaciones JavaScript o Node.js. En el contexto de un proyecto web, main.js 
+ suele ser el archivo que se encarga de iniciar la aplicación y donde se importan y
+  utilizan otros módulos o bibliotecas.

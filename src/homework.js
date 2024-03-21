@@ -5,37 +5,67 @@
   /* First excercise */
   
   let numbers = [1, 2, 3, 4, 5];
+
+  let result = numbers.map(function(num) {
+    return num * 5;
+});
+console.log(result); 
   
   /* Multiplique los numeros del arreglo por 5 */
 
   /*Resultado esperado: [5, 10, 15, 20, 25] */
 
-  /* First excercise */
+  /* se uso la funcion Map  que sirve para crear un nuevo array con los resultados del array original*/
+
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ 
 
   /* Second excercise */
 
   let names = ["Jhosep", "Daniel", "Rodrigo", "Veronica"];
 
-  /* Ordernar los nombres alfabeticamente */
+
+  let sortedNames = names.sort();
+  
+  console.log(sortedNames);  
+
+  /* sort() está ordenando alfabéticamente los nombres en el array names*/
 
   /* Resultado esperado: ["Daniel", "Jhosep", "Rodrigo", "Veronica"] */
 
-  /* Second excercise */
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   /* Thrid excercise */
 
   const data = ['a', 'b', 'z', 'r', 'a', 'c', 'r', 'a'];
+  
 
-  /* Dado un arreglo, crear otro sin letras repetidas */
+  let uniqueData = [...new Set(data)];
+  
+  console.log(uniqueData);  
   /* Resultado esperado: ['a', 'b', 'z', 'r', 'c'] */
 
-  /* Thrid excercise */
+ //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   /* Fourth excercise */
 
   const largeWord = "abcdabcdABCD";
 
-  /* Dado un string mostrar cuantas veces se repite cada letra*/
+let letterCount = {};
+
+for(let letter of largeWord) {
+    if(letterCount[letter]) {
+        letterCount[letter]++;
+    } else {
+        letterCount[letter] = 1;
+    }
+}
+
+console.log(letterCount);
+
   /* Resultado: 
     {
       a: 2,
