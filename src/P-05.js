@@ -1,5 +1,5 @@
-const sortFruits = (fruits) => fruits.sort();
+let sortFruits = (fruits) => fruits.sort();
 
-const getElementInTheMiddle = (list) => list[Math.floor(list.length / 2)];
+let getElementInTheMiddle = (list) => list[Math.floor(list.length / 2)];
 
-const adminLogin = (user) => (user == "ADMIN" || user == "DEV") ? true : false;
+let adminLogin = (user) => (user == "ADMIN" || user == "DEV") ? true : false;
